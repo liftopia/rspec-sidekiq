@@ -40,6 +40,9 @@ RSpec::Sidekiq.configure do |config|
   # Whether to use terminal colours when outputting messages
   config.enable_terminal_colours = true # default => true
 
+  # Warn when the mocking library isn't supported
+  config.warn_unsupported_mocking_library = true # default => true
+
   # Warn when jobs are not enqueued to Redis but to a job array
   config.warn_when_jobs_not_processed_by_sidekiq = true # default => true
 end
